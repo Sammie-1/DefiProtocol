@@ -74,7 +74,11 @@ export default {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-secondary': 'var(--gradient-secondary)',
 				'gradient-accent': 'var(--gradient-accent)',
-				'gradient-hero': 'var(--gradient-hero)'
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-blue-fade': 'linear-gradient(180deg, theme(colors.blue.900) 0%, theme(colors.blue.950) 50%, theme(colors.slate.950) 100%)',
+				'gradient-card': 'linear-gradient(180deg, rgba(59, 130, 246, 0.1) 0%, rgba(30, 64, 175, 0.05) 100%)',
+				'gradient-blue-soft': 'linear-gradient(180deg, theme(colors.blue.800) 0%, theme(colors.blue.900) 30%, theme(colors.slate.900) 70%, theme(colors.slate.950) 100%)',
+				'gradient-blue-intense': 'linear-gradient(180deg, theme(colors.sky.600) 0%, theme(colors.blue.700) 25%, theme(colors.blue.800) 50%, theme(colors.blue.900) 75%, theme(colors.slate.950) 100%)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

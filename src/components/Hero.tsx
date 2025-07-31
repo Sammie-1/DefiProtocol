@@ -8,14 +8,17 @@ const Hero = () => {
   const { isConnected, walletAddress, handleDisconnect } = useWallet();
   const [isWalletModalOpen, setIsWalletModalOpen] = useState(false);
   const [isWhitelistModalOpen, setIsWhitelistModalOpen] = useState(false);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-hero">
         <div className="absolute inset-0 opacity-50">
-          <div className="floating-animation absolute top-20 left-20 w-32 h-32 bg-crypto-purple/20 rounded-full blur-xl"></div>
-          <div className="floating-animation absolute top-40 right-32 w-48 h-48 bg-crypto-blue/20 rounded-full blur-xl" style={{animationDelay: '2s'}}></div>
-          <div className="floating-animation absolute bottom-32 left-1/3 w-40 h-40 bg-crypto-green/20 rounded-full blur-xl" style={{animationDelay: '4s'}}></div>
+          <div className="floating-animation absolute top-20 left-20 w-32 h-32 bg-blue-500/20 rounded-full blur-xl"></div>
+          <div className="floating-animation absolute top-40 right-32 w-48 h-48 bg-sky-400/20 rounded-full blur-xl" style={{animationDelay: '2s'}}></div>
+          <div className="floating-animation absolute bottom-32 left-1/3 w-40 h-40 bg-blue-600/20 rounded-full blur-xl" style={{animationDelay: '4s'}}></div>
+          <div className="floating-animation absolute top-60 right-1/4 w-36 h-36 bg-indigo-400/20 rounded-full blur-xl" style={{animationDelay: '1s'}}></div>
+          <div className="floating-animation absolute bottom-40 right-20 w-44 h-44 bg-cyan-400/20 rounded-full blur-xl" style={{animationDelay: '3s'}}></div>
         </div>
       </div>
 

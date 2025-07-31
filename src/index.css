@@ -6,53 +6,53 @@
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 224 71% 4%;
+    --foreground: 210 40% 98%;
 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 224 71% 4%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 240 5% 6%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 224 71% 6%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 263 70% 50%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 84% 4.9%;
 
-    --secondary: 240 4% 16%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 240 5% 6%;
-    --muted-foreground: 240 5% 64%;
+    --muted: 215 32% 27%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 142 71% 45%;
-    --accent-foreground: 240 10% 3.9%;
+    --accent: 216 87% 53%;
+    --accent-foreground: 222 84% 4.9%;
 
     --destructive: 0 63% 31%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 240 6% 20%;
-    --input: 240 6% 20%;
-    --ring: 263 70% 50%;
+    --border: 215 32% 27%;
+    --input: 215 32% 27%;
+    --ring: 217 91% 60%;
 
     --radius: 0.75rem;
 
-    /* Crypto-specific design tokens */
+    /* Blue-themed crypto design tokens */
     --crypto-blue: 217 91% 60%;
-    --crypto-purple: 263 70% 50%;
-    --crypto-green: 142 71% 45%;
+    --crypto-purple: 239 84% 67%;
+    --crypto-green: 160 84% 39%;
     --crypto-gold: 45 93% 58%;
     --crypto-red: 0 84% 60%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--crypto-purple)), hsl(var(--crypto-blue)));
-    --gradient-secondary: linear-gradient(135deg, hsl(var(--crypto-green)), hsl(var(--crypto-blue)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--crypto-gold)), hsl(var(--crypto-green)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(240 10% 6%) 50%, hsl(var(--background)) 100%);
+    /* Blue gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(239 84% 67%));
+    --gradient-secondary: linear-gradient(135deg, hsl(160 84% 39%), hsl(217 91% 60%));
+    --gradient-accent: linear-gradient(135deg, hsl(45 93% 58%), hsl(160 84% 39%));
+    --gradient-hero: linear-gradient(180deg, hsl(224 71% 4%) 0%, hsl(217 32% 17%) 30%, hsl(215 32% 27%) 70%, hsl(224 71% 4%) 100%);
 
-    /* Shadows */
-    --shadow-primary: 0 10px 40px -10px hsl(var(--crypto-purple) / 0.3);
-    --shadow-accent: 0 10px 40px -10px hsl(var(--crypto-green) / 0.3);
-    --shadow-glow: 0 0 30px hsl(var(--crypto-purple) / 0.4);
+    /* Blue-themed shadows */
+    --shadow-primary: 0 10px 40px -10px hsl(217 91% 60% / 0.3);
+    --shadow-accent: 0 10px 40px -10px hsl(160 84% 39% / 0.3);
+    --shadow-glow: 0 0 30px hsl(217 91% 60% / 0.4);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -120,6 +120,13 @@
 
   body {
     @apply bg-background text-foreground;
+    background: linear-gradient(180deg, 
+      hsl(224 71% 8%) 0%, 
+      hsl(217 32% 17%) 20%, 
+      hsl(215 32% 27%) 40%, 
+      hsl(217 32% 17%) 60%, 
+      hsl(224 71% 4%) 100%);
+    min-height: 100vh;
   }
 }
 
@@ -166,7 +173,7 @@
   }
 
   @keyframes pulse-glow {
-    from { box-shadow: 0 0 20px hsl(var(--crypto-purple) / 0.4); }
-    to { box-shadow: 0 0 30px hsl(var(--crypto-purple) / 0.8); }
+    from { box-shadow: 0 0 20px hsl(217 91% 60% / 0.4); }
+    to { box-shadow: 0 0 30px hsl(217 91% 60% / 0.8); }
   }
 }
