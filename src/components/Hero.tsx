@@ -48,16 +48,18 @@ const Hero = () => {
           {!isConnected ? (
             <button 
               onClick={() => setIsWalletModalOpen(true)}
-              className="btn-crypto inline-flex items-center gap-2 min-w-[180px]"
+              className="btn-crypto inline-flex items-center gap-2 min-w-[160px] sm:min-w-[180px]"
             >
               <Wallet size={20} />
-              Connect Wallet
+              <span className="hidden sm:inline">Connect Wallet</span>
+              <span className="sm:hidden">Connect</span>
             </button>
           ) : (
             <div className="flex flex-col sm:flex-row gap-2 items-center">
               <button className="btn-crypto inline-flex items-center gap-2">
                 <Check size={20} />
-                Connected: {walletAddress}
+                <span className="hidden sm:inline">Connected: {walletAddress}</span>
+                <span className="sm:hidden">Connected</span>
               </button>
               <button 
                 onClick={handleDisconnect}
@@ -71,7 +73,8 @@ const Hero = () => {
             onClick={() => setIsWhitelistModalOpen(true)}
             className="btn-crypto-secondary"
           >
-            Join Whitelist
+            <span className="hidden sm:inline">Join Whitelist</span>
+            <span className="sm:hidden">Whitelist</span>
           </button>
         </div>
 

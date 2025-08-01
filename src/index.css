@@ -151,12 +151,12 @@
 
   .btn-crypto {
     background: var(--gradient-primary);
-    @apply text-primary-foreground font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105;
+    @apply text-primary-foreground font-semibold px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 text-sm sm:text-base rounded-xl transition-all duration-300 hover:scale-105;
     box-shadow: var(--shadow-primary);
   }
 
   .btn-crypto-secondary {
-    @apply bg-secondary text-secondary-foreground border border-border font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:bg-secondary/80;
+    @apply bg-secondary text-secondary-foreground border border-border font-semibold px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 text-sm sm:text-base rounded-xl transition-all duration-300 hover:bg-secondary/80;
   }
 
   .floating-animation {
